@@ -1,0 +1,50 @@
+BACKEND=>
+
+Before starting the project I used the following command to install packages related to this project
+
+- npm init --yes
+- npm i cors dotenv express mongoose validator
+	cores -is used to connect the backend to the frontend
+	dotemv- it is used for secret variable
+	express- is used as a backend framework
+	mongoose - is used as a database
+	validator - is used for email and phone number validation.
+	
+
+start project
+First, I created a folder config in that folder I created config.env file
+that file I kept a secret variable. I kept that variable secret even at the time of deployment.
+
+* In package.jason we need to give type=module because we want to work with nodejs
+by default this file type is coomon json. so we need to change it.
+
+	*  (express.json)To convert string to object we use express.json
+what is the super keyword & and what use of the super keyword in the constructor?
+=> 
+
+At the time of revision please copy the code from controller/reservation and paste on chatgpt and get full details about this function which we used for better understanding.
+especially do
+ if(error.name === "Validation"){
+            const validationErrors = Object.values(error.errors).map(
+                (err)=> err.message
+            );this code at the time of interview,
+
+
+FRONTEND=>
+
+I start frontend using some regular command i.e
+
+	-like entering npm create vite@latest project
+	- then I select react
+	- then i select javascript+SWC
+	-After that, I change the directory using the cd path
+	- then in that path, I create node modules using the npm install
+
+	- After that, I install  more packages using the following command
+npm install react-router-dom axios react-icons react-scroll
+
+After this, I install one more dependency not package for attractive alert messages:-   npm install react-hot-toast
+
+At last after creating demo files and intalling all packages and dependencies i run command to check whether my app is working or not i used npm run dev
+
+** For animated effect we install react scroll package at initaial stage.
